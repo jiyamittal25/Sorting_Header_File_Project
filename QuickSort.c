@@ -1,5 +1,7 @@
 #include "Sorting.h"
 int partition(void* arr1,int l,int h,int choice){
+
+    // if choice is integer
     if(choice==1){
         int *arr=(int *)arr1;
         int pivot=arr[h];
@@ -13,6 +15,8 @@ int partition(void* arr1,int l,int h,int choice){
         swap(&arr[i+1],&arr[h],choice);
         return (i+1);
     }
+
+    // if choice is character
     else if(choice==2){
         char *arr=(char *)arr1;
         char pivot=arr[h];
@@ -26,6 +30,8 @@ int partition(void* arr1,int l,int h,int choice){
         swap(&arr[i+1],&arr[h],choice);
         return (i+1);
     }
+
+    // if choice is long
     else if(choice==3){
         long *arr=(long *)arr1;
         long pivot=arr[h];
@@ -39,6 +45,8 @@ int partition(void* arr1,int l,int h,int choice){
         swap(&arr[i+1],&arr[h],choice);
         return (i+1);
     }
+
+    // if choice is float
     else if(choice==4){
         float *arr=(float *)arr1;
         float pivot=arr[h];
@@ -52,6 +60,8 @@ int partition(void* arr1,int l,int h,int choice){
         swap(&arr[i+1],&arr[h],choice);
         return (i+1);
     }
+
+    // if choice is double
     else if(choice==5){
         double *arr=(double *)arr1;
         double pivot=arr[h];
@@ -66,6 +76,7 @@ int partition(void* arr1,int l,int h,int choice){
         return (i+1);
     }
 }
+
 void quickSort(void* arr,int l,int h,int choice){
     if(l<h){
         int p=partition(arr,l,h,choice);
