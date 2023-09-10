@@ -5,11 +5,6 @@
 
 //function return 1 if input is integer else return 0.
 int isInteger(char *input){
-    // for negative condition
-    if(*input=='-'){
-        input++;
-    }
-
     // for empty case
     if(*input=='\0'){
         return 0;
