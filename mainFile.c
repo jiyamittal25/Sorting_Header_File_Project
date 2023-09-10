@@ -33,7 +33,7 @@ int main(){
     printf("\n");
     if(datatype_choice>5 || datatype_choice<1){
         printf("Invalid Choice for  Datatype!\n");
-        exit(0);
+        exit(1);
     }
 
     // choice for sorting algoritm.
@@ -43,7 +43,7 @@ int main(){
     printf("\n");
     if(sort_choice>5 || sort_choice<1){
         printf("Invalid Choice for Sorting Algorithm!\n");
-        exit(0);
+        exit(1);
     }
 
    // Input of size.
