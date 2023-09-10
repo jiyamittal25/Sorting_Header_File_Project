@@ -2,6 +2,8 @@
 void selectionSort(void *arr,int arr_size,int choice){
     for(int i=0;i<arr_size-1;i++){
          int min=i;
+
+        // if choice is integer
          if(choice==1){
               for(int j=i+1;j<arr_size;j++){
                   int elem1 = ((int *)arr)[min];
@@ -14,6 +16,8 @@ void selectionSort(void *arr,int arr_size,int choice){
                    swap(&((int *)arr)[min],&((int *)arr)[i],choice);
               }
         }
+
+        // if choice is character
         else if(choice==2){
             for(int j=i+1;j<arr_size;j++){
                char elem1 = ((char *)arr)[min];
@@ -26,6 +30,8 @@ void selectionSort(void *arr,int arr_size,int choice){
                 swap(&((char *)arr)[min],&((char *)arr)[i],choice);
             }
         }
+
+        // if choice is long
         else if(choice==3){
              for(int j=i+1;j<arr_size;j++){
                   long elem1 = ((long *)arr)[min];
@@ -38,6 +44,8 @@ void selectionSort(void *arr,int arr_size,int choice){
                  swap(&((long *)arr)[min],&((long *)arr)[i],choice);
              }
         }
+
+        // if choice is float
         else if(choice==4){
              for(int j=i+1;j<arr_size;j++){
                  float elem1 = ((float *)arr)[min];
@@ -50,6 +58,8 @@ void selectionSort(void *arr,int arr_size,int choice){
                  swap(&((float *)arr)[min],&((float *)arr)[i],choice);
              }
         }
+
+        // if choice is double
         else if(choice==5){
             for(int j=i+1;j<arr_size;j++){
                 double elem1 = ((double *)arr)[min];
