@@ -12,3 +12,4 @@ This header file contains Sorting Alogorithm as follows:
     4) Merge Sort
     5) Quick Sort
 This header file also contain swapping function.
+Size should not be greater than 2147483647.
