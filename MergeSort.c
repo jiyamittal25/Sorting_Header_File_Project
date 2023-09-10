@@ -2,6 +2,8 @@
 void merge(void* arr1,int l,int mid,int h,int choice){
     int n1=mid-l+1;
     int n2=h-mid;
+
+    // if choice is integer
     if(choice==1){
         int *arr=(int *)arr1;
         int* left=(int *)malloc(n1*sizeof(int));
@@ -31,6 +33,8 @@ void merge(void* arr1,int l,int mid,int h,int choice){
         free(left);
         free(right);
     }
+
+    // if choice is character
     else if(choice==2){
         char *arr=(char *)arr1;
         char* left=(char *)malloc(n1*sizeof(char));
@@ -60,6 +64,8 @@ void merge(void* arr1,int l,int mid,int h,int choice){
         free(left);
         free(right);
     }
+
+    // if choice is long
     else if(choice==3){
         long *arr=(long *)arr1;
         long* left=(long *)malloc(n1*sizeof(long));
@@ -89,6 +95,8 @@ void merge(void* arr1,int l,int mid,int h,int choice){
         free(left);
         free(right);
     }
+
+    // if choice is float
     else if(choice==4){
         float *arr=(float *)arr1; 
         float* left=(float *)malloc(n1*sizeof(int));
@@ -118,6 +126,8 @@ void merge(void* arr1,int l,int mid,int h,int choice){
          free(left);
          free(right);
     }
+
+    // if choice is double
     else if(choice==5){
         double *arr=(double *)arr1;
         double* left=(double *)malloc(n1*sizeof(double));
